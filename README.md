@@ -1,4 +1,4 @@
-jDFT: JAVA Density Functional Theory For Solid 
+#jDFT: JAVA Density Functional Theory For Solid 
 # Features
 - SCF with electron density mixing
 - Band structure calculations
@@ -6,5 +6,5 @@ jDFT: JAVA Density Functional Theory For Solid
 # Requirements
 - Linux OS
 - Java (https://www.java.com/en/download/) version >= 11
-# Example of band structure calculations (Cu)
+# Example of Cu's band structure calculations
 <img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="500px" />
