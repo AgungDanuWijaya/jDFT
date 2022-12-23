@@ -1,8 +1,8 @@
-#jDFT: JAVA Density Functional Theory For Solid 
+# jDFT: JAVA Density Functional Theory For Solid 
 # Features
 - SCF with electron density mixing
 - Band structure calculations
-- LDA-VWN functionals
+- LDA-PZ functionals
 # Requirements
 - Linux OS
 - Java (https://www.java.com/en/download/) version >= 11
