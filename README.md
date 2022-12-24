@@ -13,7 +13,7 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
 ## Installation
 
 ## Example calculation
-The following will show an example of calculating the total energy and band structure
+The following will show an example of calculating the Si's total energy and band structure
 ## Total energy
 ------------
 
