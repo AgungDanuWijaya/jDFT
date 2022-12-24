@@ -7,9 +7,10 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
 ## Requirements
 - Linux OS
 - Java (https://www.java.com/en/download/) version >= 11
-##Installation
-You can download the the package as zip file (using Github) or clone this repository to your computer. 
-You can freely extract in the folder you like.
+
+## Installation
+You can download the package zip file (using Github) or clone this repository to your computer. You can freely extract it into the folder you like.
+
 ## Input File Descriptions
 -   smar : gaussian smearing for metals;
 
