@@ -91,7 +91,7 @@ public class init_AntDFT_gen {
         
         for (int i = 0; i < param.banyak_atom; i++) {
              param.upf_data.get(atom[i]).name = atom[i];
-        param.upf_data.get(atom[i]).usp = init.usp_[i];
+        param.upf_data.get(atom[i]).usp = (int)init.usp;
         param.upf_data.get(atom[i]).url_upf = init.upf_url[i];
         }
        

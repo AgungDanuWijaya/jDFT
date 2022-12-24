@@ -1,8 +1,5 @@
 package main;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 public class init_data {
 
     public String status;
@@ -19,7 +16,6 @@ public class init_data {
     public double mix;
     public String atom[];
     public String upf_url[];
-    public int usp_[];
     public double term;
     public double lattice[][];
     public double degauss_=0.02;

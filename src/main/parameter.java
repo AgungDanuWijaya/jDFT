@@ -10,16 +10,17 @@ import init_grid.ggen_object;
  * @author agung
  */
 public class parameter {
+
     public int nsym;
-    public int tannn=0;
-  public  int nbase=0;
-    public int notcnv=0;
-public double ewald=0;
-public double eband=0;
-public double ehart=0;
-public double etxc=0;
-public double deband=0;
-public double demet=0;
+    public int tannn = 0;
+    public int nbase = 0;
+    public int notcnv = 0;
+    public double ewald = 0;
+    public double eband = 0;
+    public double ehart = 0;
+    public double etxc = 0;
+    public double deband = 0;
+    public double demet = 0;
     public int set_cal = 0;
     public int usp = 0;
     public double ap[][][];
@@ -125,7 +126,7 @@ public double demet=0;
     public HashMap<Integer, double[][][]> h_psi_2 = new HashMap<>();
 
     public double h_psi_l[][][];
-     
+
     public gev_object solusi;
     public double vec[][][];
     public gev_object solusi1;
@@ -133,7 +134,7 @@ public double demet=0;
     public int iter_big = 0;
     public int pan = 0;
     public int ngm_s;
-       public int ngm;
+    public int ngm;
     public double s_[][][];
     public HashMap<Integer, Integer> invs;
     public HashMap<Integer, HashMap<Integer, Integer>> vect = new HashMap<>();
