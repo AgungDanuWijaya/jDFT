@@ -32,7 +32,7 @@ You can download the package zip file (using Github) or clone this repository to
 
 -   num\_atom : Number of types of atoms in the unit cell
 
--   nat : number of atoms in the unit cell
+-   nat : Number of atoms in the unit cell
 
 -   mix : Mixing factor for self-consistency
 
