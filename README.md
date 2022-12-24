@@ -12,7 +12,7 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
 You can download the package zip file (using Github) or clone this repository to your computer. You can freely extract it into the folder you like.
 
 ## Input File Descriptions
--   smar[1,0] : gaussian smearing for metals (set 1 for smearing)
+-   smar[1,0] : Gaussian smearing for metals (set 1 for smearing)
 
 -   random [1,0] : Initial wave function initiation using random number (set 0 for random )
 
@@ -21,7 +21,7 @@ You can download the package zip file (using Github) or clone this repository to
 
 -   celldm : Crystallographic constants
 
--   ecutefc : kinetic energy cutoff (Ry) for wavefunctions
+-   ecutefc : Kinetic energy cutoff (Ry) for wavefunctions
 
 -   ecutrho : Kinetic energy cutoff (Ry) for charge density and
     potential For norm-conserving pseudopotential
@@ -30,16 +30,16 @@ You can download the package zip file (using Github) or clone this repository to
 
 -   iband : Number of electronic states (bands) to be calculated.
 
--   num\_atom : number of types of atoms in the unit cell
+-   num\_atom : Number of types of atoms in the unit cell
 
 -   nat : number of atoms in the unit cell
 
--   mix : mixing factor for self-consistency
+-   mix : Mixing factor for self-consistency
 
--   pos : atomic positions are in cartesian coordinates, in units of the
+-   pos : Atomic positions are in cartesian coordinates, in units of the
     lattice parameter (either celldm(1) or A).
 
--   k\_point : read k-points in cartesian coordinates.
+-   k\_point : Read k-points in cartesian coordinates.
 ## Example calculations
 
 Total energy
