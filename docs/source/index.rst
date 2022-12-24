@@ -1,57 +1,30 @@
-AAA
-===================================
+.. MatCoupLy documentation master file, created by
+   sphinx-quickstart on Mon Nov  8 07:01:22 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-**jDFT** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
+Welcome to MatCoupLy's documentation!
+=====================================
 
 .. toctree::
-
-   Installation
-   Example
+   :maxdepth: 2
+   :caption: Contents:
    
-BB
-===================================
-.. _installation:
-
-Installation
-------------
-
-To use Lumache, first install it using pip:
-
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   about_matcouply
+   installation
+   coupled_matrix_factorization
+   optimization
+   auto_examples/index
+   notebooks/index
+   api
+   contributing
+   references
 
 
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
