@@ -1,4 +1,4 @@
- Example calculations
+Example calculations
 ====================
 
 Total energy
