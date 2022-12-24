@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'jDFT'
 copyright = '2021, Graziella'
-author = 'Graziella'
+author = 'Agung Danu Wijaya'
 
 release = '0.1'
 version = '0.1.0'
