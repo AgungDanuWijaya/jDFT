@@ -10,15 +10,7 @@ Welcome to MatCoupLy's documentation!
    :maxdepth: 2
    :caption: Contents:
    
-   about_matcouply
-   installation
-   coupled_matrix_factorization
-   optimization
-   auto_examples/index
-   notebooks/index
    api
-   contributing
-   references
 
 
 
