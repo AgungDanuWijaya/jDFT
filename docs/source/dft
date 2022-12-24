@@ -1,0 +1,32 @@
+Density functional theory(DFT)
+==============================
+
+Density functional theory (DFT) is a successful theory in deep Physics
+and Chemistry last half century \[1--4\]. This theory is used in
+predicting the structure and properties of atoms, molecules, and solids
+where this theory is very useful in finding the main material of
+Material Design, where one tries to create new materials with certain
+characteristics. This theory also made its way in Biology as a tool in
+conducting investigations of DNA, proteins, etc. DFT applications are
+generally carried out in what is called the Kohn-Sham scheme \[5\],
+where this scheme uses a non-interaction method. electronic system to
+calculate the density of interacting systems \[6\]. The Kohn-Sham scheme
+leads to the following equality. $$\label{eq1}
+\begin{split}
+  [-\dfrac{1}{2}\nabla^2+V_{ext(\textbf{r})}+
+  \int d^3r'\dfrac{n(\textbf{r}')}{|\textbf{r}-\textbf{r}'|}+V_{xc}[n](\textbf{r})]\Psi_k(\textbf{r})=\epsilon_k \Psi_k(\textbf{r})
+\end{split}$$
+
+where the first term represents the kinetic energy of the electrons, the
+second is the external potential, the third term is the Hartree
+potential that describes the classical electrostatic repulsion between
+the electrons. The last term is the exchange-correlation (xc) potential
+$V_{xc}[n]$ where defined by $$\label{eq2}
+\begin{split}
+  V_{xc}[n](\textbf{r})=\dfrac{\delta E_{xc}[n]}{\delta n(r)}
+\end{split}$$ $E_{xc}[n]$ is the xc energy functional. Note that by
+$[n]$ we denote that the quantity is a functional of the electronic
+density, $$\label{eq2_1}
+\begin{split}
+  n(\textbf{r})=\sum^{occ}_i |\Psi_k(\textbf{r})|^2
+\end{split}$$ where the sum runs over the occupied states
