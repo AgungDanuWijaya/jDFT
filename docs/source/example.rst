@@ -3,6 +3,7 @@ Example calculations
 
 Total energy
 ------------
+..  code-block:: console
 
     {
         "status": "scf",
@@ -43,7 +44,7 @@ Total energy
 
 Band Structure
 --------------
-
+..  code-block:: console
     {
         "status": "nscf",
         "smar": 0,
