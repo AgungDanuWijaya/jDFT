@@ -1,10 +1,155 @@
-# jDFT: JAVA Density Functional Theory For Solid 
-# Features
+# jDFT
+## JAVA Density Functional Theory For Solid 
+jDFT is a Java program to solve the KSDFT equation using the pseudopotential method to get a solid's band structure and total energy.
+## Features
 - SCF with electron density mixing
 - Band structure calculations
 - LDA-PZ functionals
-# Requirements
+## Language and requirements
 - Linux OS
 - Java (https://www.java.com/en/download/) version >= 11
-# Example of Cu's band structure calculations
-<img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="500px" />
+
+
+## Installation
+
+## Example calculation
+The following will show an example of calculating the Si's total energy and band structure
+## Total energy
+------------
+
+    {
+        "status": "scf",
+        "smar": 0,
+        "random": 0,
+        "usp": 0.0,
+        "celldm": [10.2, 0.0, 0.0, 0.0],
+        "ecutwfc": 18.0,
+        "ecutrho": 72.0,
+        "ibrav": 0,
+        "iband": 6,
+        "num_atom": 1,
+        "nat": 3,
+        "mix": 0.7,
+        "atom": ["Si"],
+        "upf_url": ["/home/agung/Documents/kkk/q-e-qe-6.6/pseudo/Si.pz-vbc.UPF"],
+        "term": 10.2,
+        "lattice": [
+            [10.2, 0.0, 0.0],
+            [0.0, 10.2, 0.0],
+            [0.0, 0.0, 10.2]
+        ],
+        "degauss_": 0.02,
+        "pos": [
+            [0.0, 0.0, 0.0],
+            [0.25, 0.25, 0.25],
+            [0.3, 0.3, 0.3]
+        ],
+        "atom_pos": [0, 0, 0],
+        "weig": [2.0],
+        "k_point": [
+            [0.0, 0.0, 0.0]
+        ]
+    }
+
+     
+Descriptions for each input are as follows:
+
+-   smar : gaussian smearing for metals;
+
+-   random : Initial wave function initiation using random number
+
+-   usp : The pseudopotential used is the type of ultrasoft
+    psudopotential
+
+-   celldm : Crystallographic constants
+
+-   ecutefc : kinetic energy cutoff (Ry) for wavefunctions
+
+-   ecutrho : Kinetic energy cutoff (Ry) for charge density and
+    potential For norm-conserving pseudopotential
+
+-   ibrav : Bravais-lattice index
+
+-   iband : Number of electronic states (bands) to be calculated.
+
+-   num\_atom : number of types of atoms in the unit cell
+
+-   nat : number of atoms in the unit cell
+
+-   mix : mixing factor for self-consistency
+
+-   pos : atomic positions are in cartesian coordinates, in units of the
+    lattice parameter (either celldm(1) or A).
+
+-   k\_point : read k-points in cartesian coordinates.
+
+To run the jDFT program, run the following command in the terminal
+
+    java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
+## Band Structure
+--------------
+
+    {
+        "status": "nscf",
+        "smar": 0,
+        "random": 0,
+        "usp": 0.0,
+        "celldm": [10.2, 0.0, 0.0, 0.0],
+        "ecutwfc": 18.0,
+        "ecutrho": 72.0,
+        "ibrav": 0,
+        "iband": 6,
+        "num_atom": 1,
+        "nat": 3,
+        "mix": 0.7,
+        "atom": ["Si"],
+        "upf_url": ["/home/agung/Documents/kkk/q-e-qe-6.6/pseudo/Si.pz-vbc.UPF"],
+        "term": 10.2,
+        "lattice": [
+            [10.2, 0.0, 0.0],
+            [0.0, 10.2, 0.0],
+            [0.0, 0.0, 10.2]
+        ],
+        "degauss_": 0.02,
+        "pos": [
+            [0.0, 0.0, 0.0],
+            [0.25, 0.25, 0.25],
+            [0.3, 0.3, 0.3]
+        ],
+        "atom_pos": [0, 0, 0],
+        "weig": [0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407, 0.07407407407407407],
+        "k_point": [
+            [-1.0, 0.5, 0.0],
+            [-0.9667, 0.4833, 0.0],
+            [-0.9333, 0.4667, 0.0],
+            [-0.9, 0.45, 0.0],
+            [-0.8667, 0.4333, 0.0],
+            [-0.8333, 0.4167, 0.0],
+            [-0.8, 0.4, 0.0],
+            [-0.7667, 0.3833, 0.0],
+            [-0.7333, 0.3667, 0.0],
+            [-0.7, 0.35, 0.0],
+            [-0.6667, 0.3333, 0.0],
+            [-0.6333, 0.3167, 0.0],
+            [-0.6, 0.3, 0.0],
+            [-0.5667, 0.2833, 0.0],
+            [-0.5333, 0.2667, 0.0],
+            [-0.5, 0.25, 0.0],
+            [-0.4667, 0.2333, 0.0],
+            [-0.4333, 0.2167, 0.0],
+            [-0.4, 0.2, 0.0],
+            [-0.3667, 0.1833, 0.0],
+            [-0.3333, 0.1667, 0.0],
+            [-0.3, 0.15, 0.0],
+            [-0.2667, 0.1333, 0.0],
+            [-0.2333, 0.1167, 0.0],
+            [-0.2, 0.1, 0.0],
+            [-0.1667, 0.0833, 0.0],
+            [-0.1333, 0.0667, 0.0]
+        ]
+    }
+
+To run the jDFT program, run the following command in the terminal
+
+    java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
+     
