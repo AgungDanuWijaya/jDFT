@@ -42,9 +42,11 @@ Total energy
     java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
      
 
+
 Band Structure
 --------------
 ..  code-block:: console
+
     {
         "status": "nscf",
         "smar": 0,
