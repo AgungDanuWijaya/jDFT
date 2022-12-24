@@ -80,7 +80,6 @@ Total energy
     }
 
 
-
 To run jDFT total energy calculation, execute this command on terminal. You have to run this command inside the jDFT folder.
 
     java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
@@ -90,6 +89,7 @@ Band Structure
 --------------
 
 You must first perform a total energy calculation to perform a structural band calculation.
+
     {
         "status": "nscf",
         "smar": 0,
