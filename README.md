@@ -50,7 +50,6 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
         ]
     }
 
-    java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
      
 Descriptions for each input are as follows:
 
@@ -83,6 +82,9 @@ Descriptions for each input are as follows:
 
 -   k\_point : read k-points in cartesian coordinates.
 
+To run the jDFT program, run the following command in the terminal
+
+    java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
 ## Band Structure
 --------------
 
@@ -145,6 +147,8 @@ Descriptions for each input are as follows:
             [-0.1333, 0.0667, 0.0]
         ]
     }
+
+To run the jDFT program, run the following command in the terminal
 
     java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
      
