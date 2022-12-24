@@ -80,7 +80,7 @@ Total energy
     }
 
 
-To run jDFT total energy calculation, execute this command on terminal. You have to run this command inside the jDFT folder.
+To run jDFT total energy calculation, execute this command on terminal. You have to run this command inside the jDFT folder. The results of the calculations will be stored in the out.dat file.
 
     java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
      
