@@ -5,10 +5,12 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
 - SCF with electron density mixing
 - Band structure calculations
 - LDA-PZ functionals
-## Language and requirements
+## Requirements
 - Linux OS
 - Java (https://www.java.com/en/download/) version >= 11
-
+##Installation
+You can download the the package as zip file (using Github) or clone this repository to your computer. 
+You can freely extract in the folder you like.
 ## Input File Descriptions
 -   smar : gaussian smearing for metals;
 
@@ -79,14 +81,15 @@ Total energy
 
 
 
-To run jDFT, execute this command on terminal
+To run jDFT total energy calculation, execute this command on terminal. You have to run this command inside the jDFT folder.
 
-    java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
+    java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
      
 
 Band Structure
 --------------
 
+You must first perform a total energy calculation to perform a structural band calculation.
     {
         "status": "nscf",
         "smar": 0,
@@ -147,9 +150,9 @@ Band Structure
         ]
     }
 
-To run jDFT, execute this command on terminal
+To run jDFT band structure calculation, execute this command on terminal. You have to run this command inside the jDFT folder.
 
-    java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
+    java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
      
 ## Example of Cu's band structure calculations
 <img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="400px" />
