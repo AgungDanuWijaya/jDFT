@@ -21,7 +21,7 @@ You can download the package zip file (using Github) or clone this repository to
 
 -   celldm : Crystallographic constants
 
--   ecutefc : Kinetic energy cutoff (Ry) for wavefunctions
+-   ecutwfc : Kinetic energy cutoff (Ry) for wavefunctions
 
 -   ecutrho : Kinetic energy cutoff (Ry) for charge density and
     potential For norm-conserving pseudopotential
