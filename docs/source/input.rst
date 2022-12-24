@@ -1,3 +1,5 @@
+Input File
+===============
 Descriptions for each input are as follows:
 
         -   smar : gaussian smearing for metals;
