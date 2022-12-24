@@ -151,3 +151,5 @@ To run jDFT, execute this command on terminal
 
     java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
      
+## Example of Cu's band structure calculations
+<img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="400px" />
