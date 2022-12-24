@@ -40,6 +40,7 @@ Total energy
     }
 
 ..  code-block:: console
+
     java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
      
 
@@ -109,5 +110,6 @@ Band Structure
     }
     
 ..  code-block:: console
+
     java -jar "/home/agung/Documents/solid/terpan/JavaQsolid-old (1)/JavaQsolid-old/dist/jDFT.jar" input.dat > out.dat
      
