@@ -12,12 +12,12 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
 You can download the package zip file (using Github) or clone this repository to your computer. You can freely extract it into the folder you like.
 
 ## Input File Descriptions
--   smar : gaussian smearing for metals;
+-   smar[1,0] : gaussian smearing for metals (set 1 for smearing)
 
--   random : Initial wave function initiation using random number
+-   random [1,0] : Initial wave function initiation using random number (set 0 for random )
 
--   usp : The pseudopotential used is the type of ultrasoft
-    psudopotential
+-   usp [1,0] : The pseudopotential used is the type of ultrasoft
+    psudopotential (set 1 for ultrasoft psudopotential)
 
 -   celldm : Crystallographic constants
 
