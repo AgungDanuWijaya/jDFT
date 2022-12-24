@@ -8,4 +8,3 @@ jDFT is a Java program to solve the KSDFT equation using the pseudopotential met
 ## Language and requirements
 - Linux OS
 - Java (https://www.java.com/en/download/) version >= 11
-## Instalation
