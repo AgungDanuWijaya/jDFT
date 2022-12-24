@@ -6,4 +6,5 @@ Welcome to jDFT's documentation!
    :caption: Contents:
    
    api
+   input
    example
