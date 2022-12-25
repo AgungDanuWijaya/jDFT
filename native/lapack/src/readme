@@ -1,0 +1,8 @@
+
+gcc -c -fPIC -I/usr/lib/jvm/java-1.11.0-openjdk-amd64/include/linux -I/usr/lib/jvm/java-1.11.0-openjdk-amd64/include lapck.c 
+
+gfortran -c FortranCode.f90
+
+gcc -shared lapck.o FortranCode.o  -o libmycodeinc.so -lgfortran
+
+gcc -shared lapck.o FortranCode.o ../liblapacke.a ../liblapack.a ../librefblas.a  -o libmycodeinc.so -lgfortran

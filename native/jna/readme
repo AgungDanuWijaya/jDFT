@@ -1,0 +1,2 @@
+gcc -Wall -c -fPIC functions-v1.c -o lda.o 
+gcc -shared -o libfunctions.so lda.o
