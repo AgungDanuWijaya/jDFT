@@ -1,0 +1,33 @@
+{
+	"degauss_": 0.02,
+	"status": "scf",
+	"smar": 0,
+	"random": 0,
+	"usp": 0.0,
+	"celldm": [5.653, 0.0, 0.0, 0.0],
+	"ecutwfc": 60.0,
+	"ecutrho": 240.0,
+	"ibrav": 0,
+	"iband": 6,
+	"num_atom": 2,
+	"nat": 2,
+	"mix": 0.7,
+	"atom": ["As", "Ga"],
+	"upf_url": ["/home/agung/Documents/kkk/q-e-qe-6.6/pseudo/As.upf", "/home/agung/Documents/kkk/q-e-qe-6.6/pseudo/Ga.upf"],
+	"usp_": [0, 0],
+	"term": 5.653,
+	"lattice": [
+		[5.653, 0.0, 5.653],
+		[5.653, 5.653, 0.0],
+		[0.0, 5.653, 5.653]
+	],
+	"pos": [
+		[0.0, 0.0, 0.0],
+		[0.5, 0.5, 0.5]
+	],
+	"atom_pos": [0, 1],
+	"weig": [2.0],
+	"k_point": [
+		[0.0, 0.0, 0.0]
+	]
+}

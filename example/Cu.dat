@@ -1,0 +1,26 @@
+{
+	"degauss_": 0.02,
+	"status": "scf",
+	"smar": 1,
+	"random": 0,
+	"usp": 1.0,
+	"celldm": [6.73, 0.0, 0.0, 0.0],
+	"ecutwfc": 25.0,
+	"ecutrho": 300.0,
+	"ibrav": 2,
+	"iband": 16,
+	"num_atom": 1,
+	"nat": 1,
+	"mix": 0.7,
+	"atom": ["Cu"],
+	"upf_url": ["/home/agung/Documents/solid/q-e-qe-6__.6/pseudo/Cup.upf"],
+	"usp_": [1],
+	"pos": [
+		[0.0, 0.0, 0.0]
+	],
+	"atom_pos": [0],
+	"weig": [2.0],
+	"k_point": [
+		[0.125, 0.125, 0.125]
+	]
+}
