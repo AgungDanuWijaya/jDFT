@@ -1,1 +1,0 @@
-cc -fPIC  -I/home/agung/fftw/include -I /usr/lib/jvm/java-1.11.0-openjdk-amd64/include -I /usr/lib/jvm/java-1.11.0-openjdk-amd64/include/linux fftw.cpp -o libjni_tes.so -shared  -L/home/agung/fftw/lib -lfftw3
