@@ -21,7 +21,7 @@ You can download the package zip file (using Github) or clone this repository to
 
 -   celldm : Crystallographic constants
 
--   ecutefc : Kinetic energy cutoff (Ry) for wavefunctions
+-   ecutwfc : Kinetic energy cutoff (Ry) for wavefunctions
 
 -   ecutrho : Kinetic energy cutoff (Ry) for charge density and
     potential For norm-conserving pseudopotential
@@ -60,7 +60,6 @@ Total energy
         "mix": 0.7,
         "atom": ["Si"],
         "upf_url": ["/home/agung/Documents/kkk/q-e-qe-6.6/pseudo/Si.pz-vbc.UPF"],
-        "term": 10.2,
         "lattice": [
             [10.2, 0.0, 0.0],
             [0.0, 10.2, 0.0],
@@ -105,7 +104,6 @@ You must first perform a total energy calculation to perform a structural band c
         "mix": 0.7,
         "atom": ["Si"],
         "upf_url": ["/home/agung/Documents/kkk/q-e-qe-6.6/pseudo/Si.pz-vbc.UPF"],
-        "term": 10.2,
         "lattice": [
             [10.2, 0.0, 0.0],
             [0.0, 10.2, 0.0],
