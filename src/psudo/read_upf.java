@@ -120,13 +120,13 @@ public class read_upf {
                 //System.out.println("ppq"  +param.PP_Q.get(i));
                 if (tan < param.PP_BETA.size()) {
                     param.PP_Q_S[in][tan] = param.PP_Q.get(i);
-                    System.out.println("ppq1" + in + " " + tan + param.PP_Q.get(i));
+                    //System.out.println("ppq1" + in + " " + tan + param.PP_Q.get(i));
                     tan++;
                 } else {
                     tan = 0;
                     in++;
                     param.PP_Q_S[in][tan] = param.PP_Q.get(i);
-                    System.out.println("ppq2" + in + " " + tan + param.PP_Q.get(i));
+                    //System.out.println("ppq2" + in + " " + tan + param.PP_Q.get(i));
                     tan++;
                 }
             }

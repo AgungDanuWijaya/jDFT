@@ -72,10 +72,8 @@ public class utama_gen_band_ {
                     new driver_deeq().set_Deeq(params[kloop]);
 
                     params[kloop].iter_big = j;
-                    System.out.println(" bec" + params[kloop].bec.get(ik)[0][0][0]);
 
                     new init_calbec().main(params[kloop], ik);
-                    System.out.println(" bec" + params[kloop].bec.get(ik)[0][0][0]);
 
                     params[kloop].set_cal = 0;
 
@@ -113,15 +111,7 @@ public class utama_gen_band_ {
                         j = 50;
                     }
                 }
-                try {
-                    FileWriter myWriter = new FileWriter("/home/agung/Documents/solid/q-e-qe-6__.6/PW/a.out");
-                    myWriter.write("iter" + kloop + " : " + total_iter + " \n");
-                    myWriter.close();
-
-                } catch (IOException e) {
-                    System.out.println("An error occurred.");
-                    e.printStackTrace();
-                }
+              
             }
             new weight().main(params, 0, params[0].wk.length, init.degauss_);
         }

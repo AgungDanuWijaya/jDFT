@@ -73,9 +73,9 @@ public class sym_base {
             }
         }
         Matrix overlap_ = new Matrix(rot);
-        overlap_.print(3, 3);
+        //overlap_.print(3, 3);
         overlap_ = overlap_.inverse();
-        overlap_.print(3, 3);
+        //overlap_.print(3, 3);
         double overlap[][] = overlap_.getArray();
 
         array_operation ao = new array_operation();

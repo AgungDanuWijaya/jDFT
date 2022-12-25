@@ -21,7 +21,7 @@ public class jDFT {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException, InterruptedException {
+    public static void main(String[] args) throws FileNotFoundException, IOException, InterruptedException, ClassNotFoundException {
         String fileName = args[0];
         File file = new File(fileName);
         FileReader fr = new FileReader(file);
@@ -34,8 +34,13 @@ public class jDFT {
 
         Gson gson = new Gson();
         init_data init = gson.fromJson(data, init_data.class);
-        utama_gen ug = new utama_gen();
-        ug.main(init);
+                if (init.status.equals("scf")) {
+            utama_gen ug = new utama_gen();
+            ug.main(init);
+        } else if (init.status.equals("bands")) {
+            utama_gen_band_ ug = new utama_gen_band_();
+            ug.main(init);
+        }
 
     }
 

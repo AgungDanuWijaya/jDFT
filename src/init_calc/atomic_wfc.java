@@ -65,7 +65,6 @@ public class atomic_wfc {
             chiq[ip] = chiq_;
         }
         HashMap<Integer, HashMap<Integer, double[]>> atomicwfc = new HashMap<>();
-        ao.disp(param.pos);
         for (int na = 0; na < param.nat; na++) {
             double arg = (param.k_point[ik][0] * param.pos[na][0] + param.k_point[ik][1] * param.pos[na][1] + param.k_point[ik][2] * param.pos[na][2]) * 2.0 * Math.PI;
             double kphase[] = {Math.cos(arg), Math.sin(arg) * -1};

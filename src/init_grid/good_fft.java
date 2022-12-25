@@ -25,7 +25,7 @@ public class good_fft {
                 }
                 if ((mr % fac) == 0) {
                     mr = mr / fac;
-                    System.out.println(mr);
+                    //System.out.println(mr);
                     pwr[i] = pwr[i] + 1;
                 }
             }

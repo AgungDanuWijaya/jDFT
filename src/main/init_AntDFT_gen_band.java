@@ -133,25 +133,18 @@ public class init_AntDFT_gen_band {
         new aainit().main(param);
 
         if (ik == 0) {
-            System.out.println("lama1");
             new driver_init_tab().main(param);
-            System.out.println("lama2");
             new driver_init_us().main(param);
-            System.out.println("lama3");
         } else {
             param.upf_data = p_d.upf_data;
         }
 
         new driver_init_at().main(param);
-        System.out.println("lama4");
         new gk_sort().main(param);
-        System.out.println("lama5");
         new driver_v_loc().main(param);
 
-        System.out.println("lama2");
         new init_vkb().main(param, ik);
-        //System.out.println(param.g2_kin.get(0).length + " kinetik" + param.g2_kin.get(0)[0] + " " + param.g2_kin.get(0)[1] + " " + param.v_of_0);
-
+        
         new wfcinit().main(param, ik);
 
         new dft.dft_driver().driver(param);

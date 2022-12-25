@@ -65,7 +65,7 @@ public class mix_rho {
                 df_[i] = param.rho_back_df_2.get(i);
                 dv_[i] = param.rho_back_dv_2.get(i);
             }
-            System.out.println("");
+            //System.out.println("");
             for (int i = 0; i < betamix.length; i++) {
                 for (int j = i; j < betamix.length; j++) {
                     betamix[i][j] = new rho_ddot().main(df_[i], df_[j], param);

@@ -57,7 +57,6 @@ public class utama_gen {
                 if (scf > 0) {
                     double con = 0.10 * params[kloop].dr / Math.max(1.0, params[kloop].tot_muatan);
                     params[kloop].con = con;
-                    System.out.println("params[kloop].dr"+params[kloop].dr);
                 }
                 //  params[kloop].con = 0.000000000001;//Kalo kecil begini iterasi jadi lama// meding ini dibesarkan, bandnya diperbanyak pada pencarian band
 
@@ -76,10 +75,8 @@ public class utama_gen {
                     new driver_deeq().set_Deeq(params[kloop]);
 
                     params[kloop].iter_big = j;
-                    System.out.println(" bec" + params[kloop].bec.get(ik)[0][0][0]);
 
                     new init_calbec().main(params[kloop], ik);
-                    System.out.println(" bec" + params[kloop].bec.get(ik)[0][0][0]);
 
                     params[kloop].set_cal = 0;
 
@@ -124,8 +121,7 @@ public class utama_gen {
                     enrgi += rho_ * vrs[i];
                 }
                 params[kloop].deband = -enrgi * params[kloop].omega / (params[kloop].nr1 * params[kloop].nr2 * params[kloop].nr3);
-                System.out.println(params[kloop].deband + "deband");
-
+                
                 int ik = kloop;
                 rho = new sum_band_rho().main(params[kloop], ik);
                 outputStream = new ObjectOutputStream(new FileOutputStream("rhog"));
@@ -137,10 +133,10 @@ public class utama_gen {
                 mix_rho mr = new mix_rho();
                 mr.main_g(params[kloop], ik);
                 mr.main_r(params[kloop], ik);
-                System.out.println((params[kloop].ewald + " " + params[kloop].etxc + " " + params[kloop].ehart + " " + params[kloop].eband + " " + params[kloop].deband + " " + params[kloop].demet) + " total energy");
+                //System.out.println((params[kloop].ewald + " " + params[kloop].etxc + " " + params[kloop].ehart + " " + params[kloop].eband + " " + params[kloop].deband + " " + params[kloop].demet) + " total energy");
                 double total_e = (params[kloop].ewald + params[kloop].etxc + params[kloop].ehart + params[kloop].eband + params[kloop].deband + params[kloop].demet);
                 total_list.put(scf, total_e);
-                System.out.println((params[kloop].ewald + params[kloop].etxc + params[kloop].ehart + params[kloop].eband + params[kloop].deband + params[kloop].demet) + " total energy" + Math.abs(total - total_e));
+                //System.out.println((params[kloop].ewald + params[kloop].etxc + params[kloop].ehart + params[kloop].eband + params[kloop].deband + params[kloop].demet) + " total energy" + Math.abs(total - total_e));
                 if (Math.abs(total - total_e) < Math.pow(10, -8)) {
                     scf = 999999999;
                 } else {
@@ -151,11 +147,12 @@ public class utama_gen {
             
         }
 
-        for (int kloop = 0; kloop < weig.length; kloop++) {
-            ao.disp(params[kloop].solusi.eigen_);
-        }
+        
         for (int i = 0; i < total_list.size(); i++) {
             System.out.println("energi scf: " + total_list.get(i));
+        }
+        for (int kloop = 0; kloop < weig.length; kloop++) {
+            ao.disp(params[kloop].solusi.eigen_);
         }
         System.out.println(formatter.format(new Date()) + " tanggal 1_1" + " total scf" + total_iter);
 

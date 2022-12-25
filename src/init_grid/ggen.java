@@ -231,7 +231,7 @@ public class ggen {
         ni += 1;
         nj += 1;
         nk += 1;
-        System.err.println(ni + " ==" + gcutm);
+        //System.err.println(ni + " ==" + gcutm);
         ni = (int) new fftw.good_fft_order().main(ni);
         nj = (int) new fftw.good_fft_order().main(nj);
         nk = (int) new fftw.good_fft_order().main(nk);

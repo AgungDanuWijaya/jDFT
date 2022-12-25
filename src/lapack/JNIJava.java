@@ -42,7 +42,7 @@ public class JNIJava {
             }
             //System.out.println("");
         }
-        System.out.println("vector0");
+        /*System.out.println("vector0");
         for (int j = 0; j < iband; j++) {
             System.out.print(vec[0][j][0] + " , " + vec[0][j][1] + ",");
         }
@@ -50,16 +50,16 @@ public class JNIJava {
         System.out.println("vector1");
         for (int j = 0; j < iband; j++) {
             System.out.print(vec[1][j][0] + " , " + vec[1][j][1] + ",");
-        }
+        }*/
         double eigen[] = new double[H.length];
         double eigen_[] = new double[H.length];
         in = 0;
-        System.out.println("");
-        System.out.println("Eigen ");
+        //System.out.println("");
+        //System.out.println("Eigen ");
         for (int i = H.length * H[0].length * 2; i < H.length * H[0].length * 2 + H.length; i++) {
             eigen[in] = res[i];
             eigen_[in] = res[i];
-            System.out.print(eigen[in] + " , ");
+            //System.out.print(eigen[in] + " , ");
             in += 1;
         }
         gev_object a = new gev_object();

@@ -64,9 +64,9 @@ public class init_AntDFT_gen {
             param.at = init.lattice;
         }
         param.at = ao.mdot(param.at, 1.0 / param.celldm[0]);
-        ao.disp(param.at);
+        //ao.disp(param.at);
         param.bg = new recips().recips(param.at);
-        ao.disp(param.bg);
+        //ao.disp(param.bg);
         new volume().main(param);
         param.campur = campur / param.omega;
         new ggen().main(param);
