@@ -78,7 +78,7 @@ Total energy
         ]
     }
 
-
+For this example, the psudo files can be found in the psudo folder.
 To run jDFT total energy calculation, execute this command on terminal. You have to run this command inside the jDFT folder. The results of the calculations will be stored in the out.dat file.
 
     java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
@@ -154,3 +154,4 @@ To run jDFT band structure calculation, execute this command on terminal. You ha
      
 ## Example of Cu's band structure calculations
 <img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="400px" />
+The input file for this example can be accessed in the example folder.
