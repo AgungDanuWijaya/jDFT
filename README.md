@@ -155,7 +155,6 @@ To run jDFT band structure calculation, execute this command on terminal. You ha
     java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
      
 ## Example of Cu's band structure calculations
-<p align="center">
+
 <img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="400px" />
-</p>
 The input file for this example can be accessed in the example folder.
