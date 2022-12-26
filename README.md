@@ -1,6 +1,5 @@
-<p align="center">
+
 <img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/android-chrome-512x512.png" alt="dftk logo" height="100px" />
-</p>
 
 # jDFT : JAVA Density Functional Theory For Solid 
 jDFT is a Java program to solve the KSDFT equation using the pseudopotential method to get a solid's band structure and total energy.
