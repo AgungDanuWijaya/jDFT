@@ -52,7 +52,7 @@ public class utama_gen {
             double rho[][] = new double[(int) (params[0].nr1s * params[0].nr2s * params[0].nr3s)][2];;
 
             for (int kloop = 0; kloop < weig.length; kloop++) {
-                
+
                 int ik = kloop;
                 if (scf > 0) {
                     double con = 0.10 * params[kloop].dr / Math.max(1.0, params[kloop].tot_muatan);
@@ -60,7 +60,6 @@ public class utama_gen {
                 }
                 //  params[kloop].con = 0.000000000001;//Kalo kecil begini iterasi jadi lama// meding ini dibesarkan, bandnya diperbanyak pada pencarian band
 
-                
                 params[kloop].scf += 1;
                 if (params[kloop].scf != 0) {
                     new dft.dft_driver().driver(params[kloop]);
@@ -121,7 +120,7 @@ public class utama_gen {
                     enrgi += rho_ * vrs[i];
                 }
                 params[kloop].deband = -enrgi * params[kloop].omega / (params[kloop].nr1 * params[kloop].nr2 * params[kloop].nr3);
-                
+
                 int ik = kloop;
                 rho = new sum_band_rho().main(params[kloop], ik);
                 outputStream = new ObjectOutputStream(new FileOutputStream("rhog"));
@@ -144,13 +143,14 @@ public class utama_gen {
                 }
             }
 
-            
         }
+        System.out.println("Total Energy : ");
 
-        
         for (int i = 0; i < total_list.size(); i++) {
             System.out.println("energi scf: " + total_list.get(i));
         }
+        
+        System.out.println("Eigen Energy : ");
         for (int kloop = 0; kloop < weig.length; kloop++) {
             ao.disp(params[kloop].solusi.eigen_);
         }

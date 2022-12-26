@@ -111,11 +111,11 @@ public class utama_gen_band_ {
                         j = 50;
                     }
                 }
-              
+
             }
             new weight().main(params, 0, params[0].wk.length, init.degauss_);
         }
-
+        System.out.println("Eigen Energy : ");
         for (int kloop = 0; kloop < weig.length; kloop++) {
             ao.disp(params[kloop].solusi.eigen_);
         }
