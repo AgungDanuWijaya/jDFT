@@ -1,3 +1,5 @@
+<img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/android-chrome-512x512.png" alt="dftk logo" height="90px" />
+
 # jDFT : JAVA Density Functional Theory For Solid 
 jDFT is a Java program to solve the KSDFT equation using the pseudopotential method to get a solid's band structure and total energy.
 ## Features
@@ -153,5 +155,6 @@ To run jDFT band structure calculation, execute this command on terminal. You ha
     java -jar "url_jdft_folder/dist/jDFT.jar" url_input_file/input.dat > out.dat
      
 ## Example of Cu's band structure calculations
+
 <img src="https://github.com/AgungDanuWijaya/jDFT/blob/master/cu_fix.png" alt="dftk logo" height="400px" />
 The input file for this example can be accessed in the example folder.
