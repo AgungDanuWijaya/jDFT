@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import tools.array_operation;
 
 /**
  *
@@ -203,13 +204,23 @@ public class jDFT_debug {
 
         Gson gson = new Gson();
         init_data init = gson.fromJson(data, init_data.class);
+array_operation ao = new array_operation();
 
+        double weig[] = ao.copy(init.weig);
+        double k_point[][] = ao.copy(init.k_point);
+        init.weig = new double[1];
+        init.k_point = new double[1][];
         if (init.status.equals("scf")) {
             utama_gen ug = new utama_gen();
             ug.main(init);
         } else if (init.status.equals("bands")) {
-            utama_gen_band_ ug = new utama_gen_band_();
-            ug.main(init);
+            for (int i = 0; i < weig.length; i++) {
+                init.weig[0] = weig[i];
+                init.k_point[0] = k_point[i];
+                utama_gen_band_ ug = new utama_gen_band_();
+                ug.main(init);
+            }
+
         }
     }
 

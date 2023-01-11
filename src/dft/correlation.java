@@ -36,5 +36,7 @@ public class correlation {
         double result[] = {ec, vc};
         return result;
     }
-
+public static void main(String args[]){
+    System.out.println(new correlation().pz(2.0, 1)[0]);
+}
 }

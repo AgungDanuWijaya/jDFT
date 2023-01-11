@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import init_calc.driver_deeq;
 import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -116,8 +119,22 @@ public class utama_gen_band_ {
             new weight().main(params, 0, params[0].wk.length, init.degauss_);
         }
         System.out.println("Eigen Energy : ");
+       
+        String dat = "";
         for (int kloop = 0; kloop < weig.length; kloop++) {
             ao.disp(params[kloop].solusi.eigen_);
+            for (int i = 0; i < params[kloop].solusi.eigen_.length; i++) {
+                dat += params[kloop].solusi.eigen_[i] + " ";
+            }
+        }
+        dat += "\n";
+
+        try {
+            Files.write(Paths.get("result.out"), dat.getBytes(), StandardOpenOption.APPEND);
+
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
         }
 
         System.out.println(formatter.format(new Date()) + " tanggal 1_1" + " total scf");
